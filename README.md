@@ -1,0 +1,3 @@
+# Subtle Memory Management Bug in Objective-C
+
+This repository demonstrates a common, yet easily missed, memory management error in Objective-C related to the `retain`/`release` cycle.  The bug involves improper handling of the `myString` property, leading to either a double release or a memory leak depending on the context and other parts of the code which are not included here for brevity.  The solution demonstrates the correct approach using ARC or manual retain/release to fix this.
